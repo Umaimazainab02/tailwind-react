@@ -2,7 +2,7 @@ import React from 'react'
 import Section1 from './components/Section1/Section1'
 import Section2 from './components/Section2/Section2'
 
-const App = (props) => {
+const App = () => {
   const cardData = [
   {
     id: 1,
@@ -20,16 +20,23 @@ const App = (props) => {
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1603201667493-4c2696de0b1f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHdvcmtpbmclMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D",
+    image: "https://media.istockphoto.com/id/2196870531/photo/making-decision-on-the-move.webp?a=1&b=1&s=612x612&w=0&k=20&c=rzFeaIUuiSoIUr2ihFB2qv26Fl3V3VkIMgygTSBbBo0=",
     text: "Customers from near-prime and sub-prime segments with no access to bank credit",
     status: "Underbanked",
+    color: "bg-lime-400",
+  },
+  {
+    id: 4,
+    image: "https://plus.unsplash.com/premium_photo-1684249780837-62b98a932b1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdvcmtpbmclMjBtZW58ZW58MHx8MHx8fDA%3D",
+    text: "Customers from near-prime and sub-prime segments with no access to bank credit",
+    status: "Underrated",
     color: "bg-lime-400",
   },
 ];
 
   return (
     <div className="h-screen w-full">
-      <Section1 />
+      <Section1 cardData={cardData} />
     </div>
   )
 }
