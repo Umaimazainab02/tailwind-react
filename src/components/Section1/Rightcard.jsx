@@ -3,7 +3,7 @@ import { RiArrowRightLine } from "@remixicon/react";
 
 const Rightcard = (props) => {
     return (
-        <div className=" w-65 h-full  shrink-0 relative overflow-hidden rounded-3xl">
+        <div className=" w-75 h-full  shrink-0 relative overflow-hidden rounded-3xl">
             <img className="w-full h-full object-cover  brightness-60" src={props.image} alt="" />
 
             <div className="absolute bottom-0 left-0 right-0 h-full  p-6 flex justify-between flex-col">
